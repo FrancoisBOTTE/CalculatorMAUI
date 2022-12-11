@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorMAUI.MainPage">
+
+    <Grid
+        ColumnSpacing="1"
+        RowSpacing="1"
+        BackgroundColor="Gray"
+        Padding="1,1"       
+        >
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Text="1"
+                FontSize="36"
+                Grid.Column="0"
+                Grid.Row="2"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="2"
+                FontSize="36"
+                Grid.Column="1"
+                Grid.Row="2"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="3"
+                FontSize="36"
+                Grid.Column="2"
+                Grid.Row="2"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="4"
+                FontSize="36"
+                Grid.Column="0"
+                Grid.Row="3"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="5"
+                FontSize="36"
+                Grid.Column="1"
+                Grid.Row="3"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="6"
+                FontSize="36"
+                Grid.Column="2"
+                Grid.Row="3"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="7"
+                FontSize="36"
+                Grid.Column="0"
+                Grid.Row="4"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="8"
+                FontSize="36"
+                Grid.Column="1"
+                Grid.Row="4"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="9"
+                FontSize="36"
+                Grid.Column="2"
+                Grid.Row="4"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+        <Button Text="0"
+                FontSize="36"
+                Grid.ColumnSpan="3"
+                Grid.Row="5"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked"
+                />
+
+
+        <Button Text="+"
+                FontSize="44"
+                Grid.Column="3"
+                Grid.Row="1"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                CornerRadius="0"
+                Clicked="Button_Clicked_1"
+                />
+
+        <Button Text="-"
+                FontSize="44"
+                Grid.Column="3"
+                Grid.Row="2"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                CornerRadius="0"
+                Clicked="Button_Clicked_1"
+                />
+
+        <Button Text="*"
+                FontSize="44"
+                Grid.Column="3"
+                Grid.Row="3"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                CornerRadius="0"
+                Clicked="Button_Clicked_1"
+                />
+
+        <Button Text="/"
+                FontSize="44"
+                Grid.Column="3"
+                Grid.Row="4"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                CornerRadius="0"
+                Clicked="Button_Clicked_1"
+                />
+
+        <Button Text="="
+                FontSize="44"
+                Grid.Column="3"
+                Grid.Row="5"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                CornerRadius="0"
+                Clicked="Button_Clicked_2"
+                />
+
+        <Button Text="C"
+                FontSize="36"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                Clicked="Button_Clicked_3"
+                />
+
+        <Button Text="x²"
+                FontSize="36"
+                Grid.Column="2"
+                Grid.Row="1"
+                BackgroundColor="White"
+                TextColor="Gray"
+                CornerRadius="0"
+                
+                />
+
+        <Label x:Name="lblResult" Grid.ColumnSpan="4" BackgroundColor="White" Text="0"
+               FontSize="70"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Center"
+               TextColor="Purple"/>
+
+    </Grid>
+
+</ContentPage>
